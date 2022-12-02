@@ -1,4 +1,4 @@
-export const input = `
+const input = `
 11223
 6323
 10725
