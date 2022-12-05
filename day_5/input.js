@@ -1,14 +1,13 @@
-let stack1 = ['G', 'D', 'V', 'Z', 'J', 'S', 'B'];
-let stack2 = ['Z', 'S', 'M', 'G', 'V', 'P'];
-let stack3 = ['C', 'L', 'B', 'S', 'W', 'T', 'Q', 'F'];
-let stack4 = ['H', 'J', 'G', 'W', 'M', 'R', 'V', 'Q'];
-let stack5 = ['C', 'L', 'S', 'N', 'F', 'M', 'D'];
-let stack6 = ['R', 'G', 'C', 'D'];
-let stack7 = ['H', 'G', 'T', 'R', 'J', 'D', 'S', 'Q'];
-let stack8 = ['P', 'F', 'V'];
-let stack9 = ['D', 'R', 'S', 'T', 'J'];
-
-let stacks = [[], stack1, stack2, stack3, stack4, stack5, stack6, stack7, stack8, stack9]
+const data = `
+        [F] [Q]         [Q]        
+[B]     [Q] [V] [D]     [S]        
+[S] [P] [T] [R] [M]     [D]        
+[J] [V] [W] [M] [F]     [J]     [J]
+[Z] [G] [S] [W] [N] [D] [R]     [T]
+[V] [M] [B] [G] [S] [C] [T] [V] [S]
+[D] [S] [L] [J] [L] [G] [G] [F] [R]
+[G] [Z] [C] [H] [C] [R] [H] [P] [D]
+ 1   2   3   4   5   6   7   8   9 `
 
 const commands = `move 3 from 5 to 2
 move 3 from 8 to 4
