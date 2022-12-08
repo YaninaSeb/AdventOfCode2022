@@ -92,6 +92,7 @@ function getSizeAllDirectories() {
     return directoriesSize
 }
 
+
 function getSumDirectories() {
     let directoriesSize = getSizeAllDirectories();
     let sum = 0;
