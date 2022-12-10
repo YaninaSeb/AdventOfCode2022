@@ -9,25 +9,19 @@ function getSumSignalStrengths(data) {
 
     arrCPU.forEach((cpu) => {
         let [instruction, value] = cpu.split(' ');
-        
-        switch (instruction) {
-            case 'noop': {
-                numCycle +=1;
-                checkCycle();
-                break;
-            }
-            case 'addx': {
-                setADDCycles(value);
-                break;
-            }
+
+        if (instruction == 'noop') {
+            setADDCycles(0, 1);
+        } else {
+            setADDCycles(value, 2);
         }
     });
 
     return sumSignalStrengths;
 }
 
-function setADDCycles(value) {
-    for (let n = 1; n < 3; n++) {
+function setADDCycles(value, count) {
+    for (let n = 0; n < count; n++) {
         numCycle += 1;
         checkCycle();
     }
@@ -41,6 +35,3 @@ function checkCycle() {
         sumSignalStrengths += signalStrengths;
     }
 }
-
-
-console.log(getSumSignalStrengths(input))
